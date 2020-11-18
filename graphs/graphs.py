@@ -348,5 +348,50 @@ turtle.dot()
 turtle.goto(nx100-13.5,10)
 turtle.write("-100")
 turtle.pendown()
-turtle.penup()
-turtle.done()
+
+correct_answer='n'
+you_shur = 'y'
+while correct_answer == 'n':
+	shape = 0
+	while shape != 1 and shape != 2 and shape != 3:
+		print('***************************')
+		print('* hit 1 for a line        *')
+		print('*hit 2 for a trianle      *')
+		print('*hit 3 for a quadrelateral*')
+		print('***************************')
+		shape=int(input('what shape do you want to draw:'))
+		if shape == 1:
+			print('you picked the opption line')
+			turtle.goto (x0,y0)
+			turtle.dot()
+			turtle.pendown()
+			turtle.goto(x100,y100)
+			turtle.dot()
+		elif shape == 2:
+			print('you picked the opption triangle')
+		else :
+			print('you picked the opption quadrelateral') 
+		correct_answer = input('is this the opption that you wanted (answer in n for no or y for yes):')
+
+while correct_answer == 'y' and you_shur == 'y':
+	you_shur = input('do you want to draw a nother shape:')
+	if you_shur == 'y':
+		correct_answer='n'
+		while correct_answer == 'n':
+			shape = 0
+			while shape != 1 and shape != 2 and shape != 3:
+				print('***************************')
+				print('* hit 1 for a line        *')
+				print('*hit 2 for a trianle      *')
+				print('*hit 3 for a quadrelateral*')
+				print('***************************')
+				shape=int(input('what shape do you want to draw:'))
+				if shape == 1:
+					print('you picked the opption line')
+				elif shape == 2:
+					print('you picked the opption triangle')
+				else :
+						print('you picked the opption quadrelateral') 
+				correct_answer = input('is this the opption that you wanted (answer in n for no or y for yes):')
+
+print('you quit the program') 
