@@ -513,43 +513,43 @@ if shape == 1:
 	# negative x input var
 	elif x_var1 == -5:
 		x_var1 = nx5
-	elif x_var == -10:
+	elif x_var1 == -10:
 		x_var1 = nx10
-	elif x_var == -15:
+	elif x_var1 == -15:
 		x_var1 = nx15
-	elif x_var == -20:
+	elif x_var1 == -20:
 		x_var1 = nx20
-	elif x_var == -25:
+	elif x_var1 == -25:
 		x_var1 = nx25
-	elif x_var == -30:
+	elif x_var1 == -30:
 		x_var1 = nx30
-	elif x_var == -35:
+	elif x_var1 == -35:
 		x_var1 = nx35
-	elif x_var == -40:
+	elif x_var1 == -40:
 		x_var1 = nx40
-	elif x_var == -45:
+	elif x_var1 == -45:
 		x_var1 = nx45
-	elif x_var == -50:
+	elif x_var1 == -50:
 		x_var1 = nx50
-	elif x_var == -55:
+	elif x_var1 == -55:
 		x_var1 = nx55
-	elif x_var == -60:
+	elif x_var1 == -60:
 		x_var1 = nx60
-	elif x_var == -65:
+	elif x_var1 == -65:
 		x_var1 = nx65
-	elif x_var == -70:
+	elif x_var1 == -70:
 		x_var1 = nx70
-	elif x_var == -75:
+	elif x_var1 == -75:
 		x_var1 = nx75
-	elif x_var == -80:
+	elif x_var1 == -80:
 		x_var1 = nx80
-	elif x_var == -85:
+	elif x_var1 == -85:
 		x_var1 = nx85
-	elif x_var == -90:
+	elif x_var1 == -90:
 		x_var1 = nx90
-	elif x_var == -95:
+	elif x_var1 == -95:
 		x_var1 = nx95
-	elif x_var == -100:
+	elif x_var1 == -100:
 		x_var1 = nx100
 	else:
 		print('invalid input')
