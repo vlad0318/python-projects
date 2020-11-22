@@ -511,7 +511,7 @@ if shape == 1:
 	elif x_var1 ==  100 :
 		x_var1 = x100
 	# negative x input var
-	elif x_var == -5:
+	elif x_var1 == -5:
 		x_var1 = nx5
 	elif x_var == -10:
 		x_var1 = nx10
