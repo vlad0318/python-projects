@@ -446,116 +446,9 @@ turtle.goto(nx100-13.5,10)
 turtle.write("-100")
 turtle.pendown()
 
-correct_answer='n'
+correct_answer='y'
 you_shur = 'y'
-while correct_answer == 'n':
-	shape = 0
-	while shape != 1 and shape != 2 and shape != 3:
-		print('***************************')
-		print('* hit 1 for a line        *')
-		print('*hit 2 for a trianle      *')
-		print('*hit 3 for a quadrelateral*')
-		print('***************************')
-		shape=int(input('what shape do you want to draw:'))
-		if shape == 1:
-			print('you picked the opption line')
-		elif shape == 2:
-			print('you picked the opption triangle')
-		elif shape == 3 :
-			print('you picked the opption quadrelateral') 
-		correct_answer = input('is this the opption that you wanted (answer in n for no or y for yes):')
-
-if shape == 1:
-	x_var1 = int(input('what is your first x input: '))
-	#positive x input var
-	if x_var1 == 0:
-		x_var1 = x0
-	elif x_var1 ==  5 :
-		x_var1 = x5
-	elif x_var1 ==  10 :
-		x_var1 = x10
-	elif x_var1 ==  15 :
-		x_var1 = x15
-	elif x_var1 ==  20 :
-		x_var1 = x20
-	elif x_var1 ==  25 :
-		x_var1 = x25
-	elif x_var1 ==  30 :
-		x_var1 = x30
-	elif x_var1 ==  35 :
-		x_var1 = x35
-	elif x_var1 ==  40 :
-		x_var1 = x40
-	elif x_var1 ==  45 :
-		x_var1 = x45
-	elif x_var1 ==  50 :
-		x_var1 = x50
-	elif x_var1 ==  55 :
-		x_var1 = x55
-	elif x_var1 ==  60 :
-		x_var1 = x60
-	elif x_var1 ==  65 :
-		x_var1 = x65
-	elif x_var1 ==  70 :
-		x_var1 = x70
-	elif x_var1 ==  75 :
-		x_var1 = x75
-	elif x_var1 ==  80 :
-		x_var1 = x80
-	elif x_var1 ==  85 :
-		x_var1 = x85
-	elif x_var1 ==  90 :
-		x_var1 = x90
-	elif x_var1 ==  95 :
-		x_var1 = x95
-	elif x_var1 ==  100 :
-		x_var1 = x100
-	# negative x input var
-	elif x_var1 == -5:
-		x_var1 = nx5
-	elif x_var1 == -10:
-		x_var1 = nx10
-	elif x_var1 == -15:
-		x_var1 = nx15
-	elif x_var1 == -20:
-		x_var1 = nx20
-	elif x_var1 == -25:
-		x_var1 = nx25
-	elif x_var1 == -30:
-		x_var1 = nx30
-	elif x_var1 == -35:
-		x_var1 = nx35
-	elif x_var1 == -40:
-		x_var1 = nx40
-	elif x_var1 == -45:
-		x_var1 = nx45
-	elif x_var1 == -50:
-		x_var1 = nx50
-	elif x_var1 == -55:
-		x_var1 = nx55
-	elif x_var1 == -60:
-		x_var1 = nx60
-	elif x_var1 == -65:
-		x_var1 = nx65
-	elif x_var1 == -70:
-		x_var1 = nx70
-	elif x_var1 == -75:
-		x_var1 = nx75
-	elif x_var1 == -80:
-		x_var1 = nx80
-	elif x_var1 == -85:
-		x_var1 = nx85
-	elif x_var1 == -90:
-		x_var1 = nx90
-	elif x_var1 == -95:
-		x_var1 = nx95
-	elif x_var1 == -100:
-		x_var1 = nx100
-	else:
-		print('invalid input')
-
 while correct_answer == 'y' and you_shur == 'y':
-	you_shur = input('do you want to draw a nother shape:')
 	if you_shur == 'y':
 		correct_answer='n'
 		while correct_answer == 'n':
@@ -574,5 +467,186 @@ while correct_answer == 'y' and you_shur == 'y':
 				else :
 						print('you picked the opption quadrelateral') 
 				correct_answer = input('is this the opption that you wanted (answer in n for no or y for yes):')
+				if shape == 1:
+					x_var1 = int(input('what is your first x input: '))
+				#positive x input var
+					if x_var1 == 0:
+						x_var1 = x0
+					elif x_var1 ==  5 :
+						x_var1 = x5
+					elif x_var1 ==  10 :
+						x_var1 = x10
+					elif x_var1 ==  15 :
+						x_var1 = x15
+					elif x_var1 ==  20 :
+						x_var1 = x20
+					elif x_var1 ==  25 :
+						x_var1 = x25
+					elif x_var1 ==  30 :
+						x_var1 = x30
+					elif x_var1 ==  35 :
+						x_var1 = x35
+					elif x_var1 ==  40 :
+						x_var1 = x40
+					elif x_var1 ==  45 :
+						x_var1 = x45
+					elif x_var1 ==  50 :
+						x_var1 = x50
+					elif x_var1 ==  55 :
+						x_var1 = x55
+					elif x_var1 ==  60 :
+						x_var1 = x60
+					elif x_var1 ==  65 :
+						x_var1 = x65
+					elif x_var1 ==  70 :
+						x_var1 = x70
+					elif x_var1 ==  75 :
+						x_var1 = x75
+					elif x_var1 ==  80 :
+						x_var1 = x80
+					elif x_var1 ==  85 :
+						x_var1 = x85
+					elif x_var1 ==  90 :
+						x_var1 = x90
+					elif x_var1 ==  95 :
+						x_var1 = x95
+					elif x_var1 ==  100 :
+						x_var1 = x100
+					# negative x input var
+					elif x_var1 == -5:
+						x_var1 = nx5
+					elif x_var1 == -10:
+						x_var1 = nx10
+					elif x_var1 == -15:
+						x_var1 = nx15
+					elif x_var1 == -20:
+						x_var1 = nx20
+					elif x_var1 == -25:
+						x_var1 = nx25
+					elif x_var1 == -30:
+						x_var1 = nx30
+					elif x_var1 == -35:
+						x_var1 = nx35
+					elif x_var1 == -40:
+						x_var1 = nx40
+					elif x_var1 == -45:
+						x_var1 = nx45
+					elif x_var1 == -50:
+						x_var1 = nx50
+					elif x_var1 == -55:
+						x_var1 = nx55
+					elif x_var1 == -60:
+						x_var1 = nx60
+					elif x_var1 == -65:
+						x_var1 = nx65
+					elif x_var1 == -70:
+						x_var1 = nx70
+					elif x_var1 == -75:
+						x_var1 = nx75
+					elif x_var1 == -80:
+						x_var1 = nx80
+					elif x_var1 == -85:
+						x_var1 = nx85
+					elif x_var1 == -90:
+						x_var1 = nx90
+					elif x_var1 == -95:
+						x_var1 = nx95
+					elif x_var1 == -100:
+						x_var1 = nx100
+					else:
+						print('invalid input')	
 
+					#start of y
+					y_var1 = int(input('what is your first y input: '))
+					#positive y input var
+					if y_var1 == 0:
+						y_var1 = y0
+					elif y_var1 == 5:
+	       				 y_var1 = y5
+					elif y_var1 == 10:
+					    y_var1 = y10
+					elif y_var1 == 15:
+					    y_var1 = y15
+					elif y_var1 == 20:
+					    y_var1 = y20
+					elif y_var1 == 25:
+					    y_var1 = y25
+					elif y_var1 == 30:
+					    y_var1 = y30
+					elif y_var1 == 35:
+					    y_var1 = y35
+					elif y_var1 == 40:
+					    y_var1 = y40
+					elif y_var1 == 45:
+					    y_var1 = y45
+					elif y_var1 == 50:
+					    y_var1 = y50
+					elif y_var1 == 55:
+					    y_var1 = y55
+					elif y_var1 == 60:
+					    y_var1 = y60
+					elif y_var1 == 65:
+					    y_var1 = y65
+					elif y_var1 == 70:
+					    y_var1 = y70
+					elif y_var1 == 75:
+					    y_var1 = y75
+					elif y_var1 == 80:
+					    y_var1 = y80
+					elif y_var1 == 85:
+					    y_var1 = y85
+					elif y_var1 == 90:
+					    y_var1 = y90
+					elif y_var1 == 95:
+					    y_var1 = y95
+					elif y_var1 == 100:
+					    y_var1 = y100	
+					#start of y negative
+					elif y_var1 == -5:
+						y_var1 = ny5
+					elif y_var1 == -10:
+						y_var1 = ny10
+					elif y_var1 == -15:
+						y_var1 = ny15
+					elif y_var1 == -20:
+						y_var1 = ny20
+					elif y_var1 == -25:
+						y_var1 = ny25
+					elif y_var1 == -30:
+						y_var1 = ny30
+					elif y_var1 == -35:
+						y_var1 = ny35
+					elif y_var1 == -40:
+						y_var1 = ny40
+					elif y_var1 == -45:
+						y_var1 = ny45
+					elif y_var1 == -50:
+						y_var1 = ny50
+					elif y_var1 == -55:
+						y_var1 = ny55
+					elif y_var1 == -60:
+						y_var1 = ny60
+					elif y_var1 == -65:
+						y_var1 = ny65
+					elif y_var1 == -70:
+						y_var1 = ny70
+					elif y_var1 == -75:
+						y_var1 = ny75
+					elif y_var1 == -80:
+						y_var1 = ny80
+					elif y_var1 == -85:
+						y_var1 = ny85
+					elif y_var1 == -90:
+						y_var1 = ny90
+					elif y_var1 == -95:
+						y_var1 = ny95
+					elif y_var1 == -100:
+						y_var1 = ny100
+					else: 
+						print('invalid input')
+					turtle.penup()
+					turtle.goto(x_var1,y_var1)
+					turtle.pendown()
+					turtle.dot()
+	you_shur = input('do you want to draw a shape:')
 print('you quit the program') 

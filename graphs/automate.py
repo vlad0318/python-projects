@@ -1,5 +1,5 @@
 i = 5
 while i < 105:
-	print('elif x_var == -',i,':', sep='')
-	print('x_var1 = nx', i , sep='')
+	print('elif y_var1 == -',i,':', sep='')
+	print('y_var1 = ny', i , sep='')
 	i = i+5
