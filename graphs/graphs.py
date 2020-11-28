@@ -98,553 +98,741 @@ ny90=-315
 ny95=-332.5
 ny100=-350
 #setup
-turtle.setup(800,800)
-turtle.hideturtle()
-turtle.speed(0)
-#start of positive y graph
-turtle.goto(x0,y0)
-turtle.dot()
-turtle.goto(0,350)
-turtle.goto(x0,y5)
-turtle.dot()
-turtle.penup()
-turtle.goto(10,y5-7.5)
-turtle.write("5")
-turtle.goto(x0,y10)
-turtle.dot()
-turtle.goto(10,y10-7.5)
-turtle.write("10")
-turtle.goto(x0,y15)
-turtle.dot()
-turtle.goto(10,y15-7.5)
-turtle.write("15")
-turtle.goto(x0,y20)
-turtle.dot()
-turtle.goto(10,x20-7.5)
-turtle.write("20")
-turtle.goto(x0,y25)
-turtle.dot()
-turtle.goto(10,x25-7.5)
-turtle.write("25")
-turtle.goto(x0,y30)
-turtle.dot()
-turtle.goto(10,x30-7.5)
-turtle.write("30")
-turtle.goto(x0,y35)
-turtle.dot()
-turtle.goto(10,x35-7.5)
-turtle.write("35")
-turtle.goto(x0,y40)
-turtle.dot()
-turtle.goto(10,x40-7.5)
-turtle.write("40")
-turtle.goto(x0,y45)
-turtle.dot()
-turtle.goto(10,x45-7.5)
-turtle.write("45")
-turtle.goto(x0,y50)
-turtle.dot()
-turtle.goto(10,x50-7.5)
-turtle.write("50")
-turtle.goto(x0,y55)
-turtle.dot()
-turtle.goto(10,x55-7.5)
-turtle.write("55")
-turtle.goto(x0,y60)
-turtle.dot()
-turtle.goto(10,x60-7.5)
-turtle.write("60")
-turtle.goto(x0,y65)
-turtle.dot()
-turtle.goto(10,x65-7.5)
-turtle.write("65")
-turtle.goto(x0,y70)
-turtle.dot()
-turtle.goto(10,x70-7.5)
-turtle.write("70")
-turtle.goto(x0,y75)
-turtle.dot()
-turtle.goto(10,x75-7.5)
-turtle.write("75")
-turtle.goto(x0,y80)
-turtle.dot()
-turtle.goto(10,x80-7.5)
-turtle.write("80")
-turtle.goto(x0,y85)
-turtle.dot()
-turtle.goto(10,x85-7.5)
-turtle.write("85")
-turtle.goto(x0,y90)
-turtle.dot()
-turtle.goto(10,x90-7.5)
-turtle.write("90")
-turtle.goto(x0,y95)
-turtle.dot()
-turtle.goto(10,x95-7.5)
-turtle.write("95")
-turtle.goto(x0,y100)
-turtle.dot()
-turtle.goto(10,x100-7.5)
-turtle.write("100")
-turtle.goto(0,0)
-turtle.pendown()
+clear_screen='y'
+while clear_screen == 'y':
+	turtle.pendown()
+	turtle.setup(800,800)
+	turtle.hideturtle()
+	turtle.speed(0)
+	#start of positive y graph
+	turtle.penup()
+	turtle.goto(x0,y0)
+	turtle.dot()
+	turtle.pendown()
+	turtle.goto(0,350)
+	turtle.goto(x0,y5)
+	turtle.dot()
+	turtle.penup()
+	turtle.goto(10,y5-7.5)
+	turtle.write("5")
+	turtle.goto(x0,y10)
+	turtle.dot()
+	turtle.goto(10,y10-7.5)
+	turtle.write("10")
+	turtle.goto(x0,y15)
+	turtle.dot()
+	turtle.goto(10,y15-7.5)
+	turtle.write("15")
+	turtle.goto(x0,y20)
+	turtle.dot()
+	turtle.goto(10,x20-7.5)
+	turtle.write("20")
+	turtle.goto(x0,y25)
+	turtle.dot()
+	turtle.goto(10,x25-7.5)
+	turtle.write("25")
+	turtle.goto(x0,y30)
+	turtle.dot()
+	turtle.goto(10,x30-7.5)
+	turtle.write("30")
+	turtle.goto(x0,y35)
+	turtle.dot()
+	turtle.goto(10,x35-7.5)
+	turtle.write("35")
+	turtle.goto(x0,y40)
+	turtle.dot()
+	turtle.goto(10,x40-7.5)
+	turtle.write("40")
+	turtle.goto(x0,y45)
+	turtle.dot()
+	turtle.goto(10,x45-7.5)
+	turtle.write("45")
+	turtle.goto(x0,y50)
+	turtle.dot()
+	turtle.goto(10,x50-7.5)
+	turtle.write("50")
+	turtle.goto(x0,y55)
+	turtle.dot()
+	turtle.goto(10,x55-7.5)
+	turtle.write("55")
+	turtle.goto(x0,y60)
+	turtle.dot()
+	turtle.goto(10,x60-7.5)
+	turtle.write("60")
+	turtle.goto(x0,y65)
+	turtle.dot()
+	turtle.goto(10,x65-7.5)
+	turtle.write("65")
+	turtle.goto(x0,y70)
+	turtle.dot()
+	turtle.goto(10,x70-7.5)
+	turtle.write("70")
+	turtle.goto(x0,y75)
+	turtle.dot()
+	turtle.goto(10,x75-7.5)
+	turtle.write("75")
+	turtle.goto(x0,y80)
+	turtle.dot()
+	turtle.goto(10,x80-7.5)
+	turtle.write("80")
+	turtle.goto(x0,y85)
+	turtle.dot()
+	turtle.goto(10,x85-7.5)
+	turtle.write("85")
+	turtle.goto(x0,y90)
+	turtle.dot()
+	turtle.goto(10,x90-7.5)
+	turtle.write("90")
+	turtle.goto(x0,y95)
+	turtle.dot()
+	turtle.goto(10,x95-7.5)
+	turtle.write("95")
+	turtle.goto(x0,y100)
+	turtle.dot()
+	turtle.goto(10,x100-7.5)
+	turtle.write("100")
+	turtle.goto(0,0)
+	turtle.pendown()	
 
-#start of negative y graph
-turtle.goto(0,-350)
-turtle.penup()
-turtle.goto(x0,ny5)
-turtle.dot()
-turtle.goto(10,ny5-7.5)
-turtle.write("-5")
-turtle.goto(x0,ny10)
-turtle.dot()
-turtle.goto(10,ny10-7.5)
-turtle.write("-10")
-turtle.goto(x0,ny15)
-turtle.dot()
-turtle.goto(10,ny15-7.5)
-turtle.write("-15")
-turtle.goto(x0,ny20)
-turtle.dot()
-turtle.goto(10,ny20-7.5)
-turtle.write("-20")
-turtle.goto(x0,ny25)
-turtle.dot()
-turtle.goto(10,ny25-7.5)
-turtle.write("-25")
-turtle.goto(x0,ny30)
-turtle.dot()
-turtle.goto(10,ny30-7.5)
-turtle.write("-30")
-turtle.goto(x0,ny35)
-turtle.dot()
-turtle.goto(10,ny35-7.5)
-turtle.write("-35")
-turtle.goto(x0,ny40)
-turtle.dot()
-turtle.goto(10,ny40-7.5)
-turtle.write("-40")
-turtle.goto(x0,ny45)
-turtle.dot()
-turtle.goto(10,ny45-7.5)
-turtle.write("-45")
-turtle.goto(x0,ny50)
-turtle.dot()
-turtle.goto(10,ny50-7.5)
-turtle.write("-50")
-turtle.goto(x0,ny55)
-turtle.dot()
-turtle.goto(10,ny55-7.5)
-turtle.write("-55")
-turtle.goto(x0,ny60)
-turtle.dot()
-turtle.goto(10,ny60-7.5)
-turtle.write("-60")
-turtle.goto(x0,ny65)
-turtle.dot()
-turtle.goto(10,ny65-7.5)
-turtle.write("-65")
-turtle.goto(x0,ny70)
-turtle.dot()
-turtle.goto(10,ny70-7.5)
-turtle.write("-70")
-turtle.goto(x0,ny75)
-turtle.dot()
-turtle.goto(10,ny75-7.5)
-turtle.write("-75")
-turtle.goto(x0,ny80)
-turtle.dot()
-turtle.goto(10,ny80-7.5)
-turtle.write("-80")
-turtle.goto(x0,ny85)
-turtle.dot()
-turtle.goto(10,ny85-7.5)
-turtle.write("-85")
-turtle.goto(x0,ny90)
-turtle.dot()
-turtle.goto(10,ny90-7.5)
-turtle.write("-90")
-turtle.goto(x0,ny95)
-turtle.dot()
-turtle.goto(10,ny95-7.5)
-turtle.write("-95")
-turtle.goto(x0,ny100)
-turtle.dot()
-turtle.goto(10,ny100-7.5)
-turtle.write("-100")
+	#start of negative y graph
+	turtle.goto(0,-350)
+	turtle.penup()
+	turtle.goto(x0,ny5)
+	turtle.dot()
+	turtle.goto(10,ny5-7.5)
+	turtle.write("-5")
+	turtle.goto(x0,ny10)
+	turtle.dot()
+	turtle.goto(10,ny10-7.5)
+	turtle.write("-10")
+	turtle.goto(x0,ny15)
+	turtle.dot()
+	turtle.goto(10,ny15-7.5)
+	turtle.write("-15")
+	turtle.goto(x0,ny20)
+	turtle.dot()
+	turtle.goto(10,ny20-7.5)
+	turtle.write("-20")
+	turtle.goto(x0,ny25)
+	turtle.dot()
+	turtle.goto(10,ny25-7.5)
+	turtle.write("-25")
+	turtle.goto(x0,ny30)
+	turtle.dot()
+	turtle.goto(10,ny30-7.5)
+	turtle.write("-30")
+	turtle.goto(x0,ny35)
+	turtle.dot()
+	turtle.goto(10,ny35-7.5)
+	turtle.write("-35")
+	turtle.goto(x0,ny40)
+	turtle.dot()
+	turtle.goto(10,ny40-7.5)
+	turtle.write("-40")
+	turtle.goto(x0,ny45)
+	turtle.dot()
+	turtle.goto(10,ny45-7.5)
+	turtle.write("-45")
+	turtle.goto(x0,ny50)
+	turtle.dot()
+	turtle.goto(10,ny50-7.5)
+	turtle.write("-50")
+	turtle.goto(x0,ny55)
+	turtle.dot()
+	turtle.goto(10,ny55-7.5)
+	turtle.write("-55")
+	turtle.goto(x0,ny60)
+	turtle.dot()
+	turtle.goto(10,ny60-7.5)
+	turtle.write("-60")
+	turtle.goto(x0,ny65)
+	turtle.dot()
+	turtle.goto(10,ny65-7.5)
+	turtle.write("-65")
+	turtle.goto(x0,ny70)
+	turtle.dot()
+	turtle.goto(10,ny70-7.5)
+	turtle.write("-70")
+	turtle.goto(x0,ny75)
+	turtle.dot()
+	turtle.goto(10,ny75-7.5)
+	turtle.write("-75")
+	turtle.goto(x0,ny80)
+	turtle.dot()
+	turtle.goto(10,ny80-7.5)
+	turtle.write("-80")
+	turtle.goto(x0,ny85)
+	turtle.dot()
+	turtle.goto(10,ny85-7.5)
+	turtle.write("-85")
+	turtle.goto(x0,ny90)
+	turtle.dot()
+	turtle.goto(10,ny90-7.5)
+	turtle.write("-90")
+	turtle.goto(x0,ny95)
+	turtle.dot()
+	turtle.goto(10,ny95-7.5)
+	turtle.write("-95")
+	turtle.goto(x0,ny100)
+	turtle.dot()
+	turtle.goto(10,ny100-7.5)
+	turtle.write("-100")	
 
-#start of positive x 
-turtle.goto(0,0)
-turtle.pendown()
-turtle.goto(350,0)
-turtle.penup()
-turtle.goto(x5,y0)
-turtle.dot()
-turtle.goto(x5-7.5,10)
-turtle.write("5")
-turtle.goto(x10,y0)
-turtle.dot()
-turtle.goto(x10-7.5,10)
-turtle.write("10")
-turtle.goto(x15,y0)
-turtle.dot()
-turtle.goto(x15-7.5,10)
-turtle.write("15")
-turtle.goto(x20,y0)
-turtle.dot()
-turtle.goto(x20-7.5,10)
-turtle.write("20")
-turtle.goto(x25,y0)
-turtle.dot()
-turtle.goto(x25-7.5,10)
-turtle.write("25")
-turtle.goto(x30,y0)
-turtle.dot()
-turtle.goto(x30-7.5,10)
-turtle.write("30")
-turtle.goto(x35,y0)
-turtle.dot()
-turtle.goto(x35-7.5,10)
-turtle.write("35")
-turtle.goto(x40,y0)
-turtle.dot()
-turtle.goto(x40-7.5,10)
-turtle.write("40")
-turtle.goto(x45,y0)
-turtle.dot()
-turtle.goto(x45-7.5,10)
-turtle.write("45")
-turtle.goto(x50,y0)
-turtle.dot()
-turtle.goto(x50-7.5,10)
-turtle.write("50")
-turtle.goto(x55,y0)
-turtle.dot()
-turtle.goto(x55-7.5,10)
-turtle.write("55")
-turtle.goto(x60,y0)
-turtle.dot()
-turtle.goto(x60-7.5,10)
-turtle.write("60")
-turtle.goto(x65,y0)
-turtle.dot()
-turtle.goto(x65-7.5,10)
-turtle.write("65")
-turtle.goto(x70,y0)
-turtle.dot()
-turtle.goto(x70-7.5,10)
-turtle.write("70")
-turtle.goto(x75,y0)
-turtle.dot()
-turtle.goto(x75-7.5,10)
-turtle.write("75")
-turtle.goto(x80,y0)
-turtle.dot()
-turtle.goto(x80-7.5,10)
-turtle.write("80")
-turtle.goto(x85,y0)
-turtle.dot()
-turtle.goto(x85-7.5,10)
-turtle.write("85")
-turtle.goto(x90,y0)
-turtle.dot()
-turtle.goto(x90-7.5,10)
-turtle.write("90")
-turtle.goto(x95,y0)
-turtle.dot()
-turtle.goto(x95-7.5,10)
-turtle.write("95")
-turtle.goto(x100,y0)
-turtle.dot()
-turtle.goto(x100-7.5,10)
-turtle.write("100")
-turtle.goto(0,0)
-turtle.pendown()
+	#start of positive x 
+	turtle.goto(0,0)
+	turtle.pendown()
+	turtle.goto(350,0)
+	turtle.penup()
+	turtle.goto(x5,y0)
+	turtle.dot()
+	turtle.goto(x5-7.5,10)
+	turtle.write("5")
+	turtle.goto(x10,y0)
+	turtle.dot()
+	turtle.goto(x10-7.5,10)
+	turtle.write("10")
+	turtle.goto(x15,y0)
+	turtle.dot()
+	turtle.goto(x15-7.5,10)
+	turtle.write("15")
+	turtle.goto(x20,y0)
+	turtle.dot()
+	turtle.goto(x20-7.5,10)
+	turtle.write("20")
+	turtle.goto(x25,y0)
+	turtle.dot()
+	turtle.goto(x25-7.5,10)
+	turtle.write("25")
+	turtle.goto(x30,y0)
+	turtle.dot()
+	turtle.goto(x30-7.5,10)
+	turtle.write("30")
+	turtle.goto(x35,y0)
+	turtle.dot()
+	turtle.goto(x35-7.5,10)
+	turtle.write("35")
+	turtle.goto(x40,y0)
+	turtle.dot()
+	turtle.goto(x40-7.5,10)
+	turtle.write("40")
+	turtle.goto(x45,y0)
+	turtle.dot()
+	turtle.goto(x45-7.5,10)
+	turtle.write("45")
+	turtle.goto(x50,y0)
+	turtle.dot()
+	turtle.goto(x50-7.5,10)
+	turtle.write("50")
+	turtle.goto(x55,y0)
+	turtle.dot()
+	turtle.goto(x55-7.5,10)
+	turtle.write("55")
+	turtle.goto(x60,y0)
+	turtle.dot()
+	turtle.goto(x60-7.5,10)
+	turtle.write("60")
+	turtle.goto(x65,y0)
+	turtle.dot()
+	turtle.goto(x65-7.5,10)
+	turtle.write("65")
+	turtle.goto(x70,y0)
+	turtle.dot()
+	turtle.goto(x70-7.5,10)
+	turtle.write("70")
+	turtle.goto(x75,y0)
+	turtle.dot()
+	turtle.goto(x75-7.5,10)
+	turtle.write("75")
+	turtle.goto(x80,y0)
+	turtle.dot()
+	turtle.goto(x80-7.5,10)
+	turtle.write("80")
+	turtle.goto(x85,y0)
+	turtle.dot()
+	turtle.goto(x85-7.5,10)
+	turtle.write("85")
+	turtle.goto(x90,y0)
+	turtle.dot()
+	turtle.goto(x90-7.5,10)
+	turtle.write("90")
+	turtle.goto(x95,y0)
+	turtle.dot()
+	turtle.goto(x95-7.5,10)
+	turtle.write("95")
+	turtle.goto(x100,y0)
+	turtle.dot()
+	turtle.goto(x100-7.5,10)
+	turtle.write("100")
+	turtle.goto(0,0)
+	turtle.pendown()	
 
-#start of negative x graph
-turtle.goto(-350,0)
-turtle.penup()
-turtle.goto(nx5,y0)
-turtle.dot()
-turtle.goto(nx5-7.5,10)
-turtle.write("-5")
-turtle.goto(nx10,y0)
-turtle.dot()
-turtle.goto(nx10-7.5,10)
-turtle.write("-10")
-turtle.goto(nx15,y0)
-turtle.dot()
-turtle.goto(nx15-7.5,10)
-turtle.write("-15")
-turtle.goto(nx20,y0)
-turtle.dot()
-turtle.goto(nx20-7.5,10)
-turtle.write("-20")
-turtle.goto(nx25,y0)
-turtle.dot()
-turtle.goto(nx25-7.5,10)
-turtle.write("-25")
-turtle.goto(nx30,y0)
-turtle.dot()
-turtle.goto(nx30-7.5,10)
-turtle.write("-30")
-turtle.goto(nx35,y0)
-turtle.dot()
-turtle.goto(nx35-7.5,10)
-turtle.write("-35")
-turtle.goto(nx40,y0)
-turtle.dot()
-turtle.goto(nx40-7.5,10)
-turtle.write("-40")
-turtle.goto(nx45,y0)
-turtle.dot()
-turtle.goto(nx45-7.5,10)
-turtle.write("-45")
-turtle.goto(nx50,y0)
-turtle.dot()
-turtle.goto(nx50-7.5,10)
-turtle.write("-50")
-turtle.goto(nx55,y0)
-turtle.dot()
-turtle.goto(nx55-7.5,10)
-turtle.write("-55")
-turtle.goto(nx60,y0)
-turtle.dot()
-turtle.goto(nx60-7.5,10)
-turtle.write("-60")
-turtle.goto(nx65,y0)
-turtle.dot()
-turtle.goto(nx65-7.5,10)
-turtle.write("-65")
-turtle.goto(nx70,y0)
-turtle.dot()
-turtle.goto(nx70-7.5,10)
-turtle.write("-70")
-turtle.goto(nx75,y0)
-turtle.dot()
-turtle.goto(nx75-7.5,10)
-turtle.write("-75")
-turtle.goto(nx80,y0)
-turtle.dot()
-turtle.goto(nx80-7.5,10)
-turtle.write("-80")
-turtle.goto(nx85,y0)
-turtle.dot()
-turtle.goto(nx85-7.5,10)
-turtle.write("-85")
-turtle.goto(nx90,y0)
-turtle.dot()
-turtle.goto(nx90-7.5,10)
-turtle.write("-90")
-turtle.goto(nx95,y0)
-turtle.dot()
-turtle.goto(nx95-7.5,10)
-turtle.write("-95")
-turtle.goto(nx100,y0)
-turtle.dot()
-turtle.goto(nx100-13.5,10)
-turtle.write("-100")
-turtle.pendown()
+	#start of negative x graph
+	turtle.goto(-350,0)
+	turtle.penup()
+	turtle.goto(nx5,y0)
+	turtle.dot()
+	turtle.goto(nx5-7.5,10)
+	turtle.write("-5")
+	turtle.goto(nx10,y0)
+	turtle.dot()
+	turtle.goto(nx10-7.5,10)
+	turtle.write("-10")
+	turtle.goto(nx15,y0)
+	turtle.dot()
+	turtle.goto(nx15-7.5,10)
+	turtle.write("-15")
+	turtle.goto(nx20,y0)
+	turtle.dot()
+	turtle.goto(nx20-7.5,10)
+	turtle.write("-20")
+	turtle.goto(nx25,y0)
+	turtle.dot()
+	turtle.goto(nx25-7.5,10)
+	turtle.write("-25")
+	turtle.goto(nx30,y0)
+	turtle.dot()
+	turtle.goto(nx30-7.5,10)
+	turtle.write("-30")
+	turtle.goto(nx35,y0)
+	turtle.dot()
+	turtle.goto(nx35-7.5,10)
+	turtle.write("-35")
+	turtle.goto(nx40,y0)
+	turtle.dot()
+	turtle.goto(nx40-7.5,10)
+	turtle.write("-40")
+	turtle.goto(nx45,y0)
+	turtle.dot()
+	turtle.goto(nx45-7.5,10)
+	turtle.write("-45")
+	turtle.goto(nx50,y0)
+	turtle.dot()
+	turtle.goto(nx50-7.5,10)
+	turtle.write("-50")
+	turtle.goto(nx55,y0)
+	turtle.dot()
+	turtle.goto(nx55-7.5,10)
+	turtle.write("-55")
+	turtle.goto(nx60,y0)
+	turtle.dot()
+	turtle.goto(nx60-7.5,10)
+	turtle.write("-60")
+	turtle.goto(nx65,y0)
+	turtle.dot()
+	turtle.goto(nx65-7.5,10)
+	turtle.write("-65")
+	turtle.goto(nx70,y0)
+	turtle.dot()
+	turtle.goto(nx70-7.5,10)
+	turtle.write("-70")
+	turtle.goto(nx75,y0)
+	turtle.dot()
+	turtle.goto(nx75-7.5,10)
+	turtle.write("-75")
+	turtle.goto(nx80,y0)
+	turtle.dot()
+	turtle.goto(nx80-7.5,10)
+	turtle.write("-80")
+	turtle.goto(nx85,y0)
+	turtle.dot()
+	turtle.goto(nx85-7.5,10)
+	turtle.write("-85")
+	turtle.goto(nx90,y0)
+	turtle.dot()
+	turtle.goto(nx90-7.5,10)
+	turtle.write("-90")
+	turtle.goto(nx95,y0)
+	turtle.dot()
+	turtle.goto(nx95-7.5,10)
+	turtle.write("-95")
+	turtle.goto(nx100,y0)
+	turtle.dot()
+	turtle.goto(nx100-13.5,10)
+	turtle.write("-100")
+	turtle.pendown()	
 
-correct_answer='y'
-you_shur = 'y'
-while correct_answer == 'y' and you_shur == 'y':
-	if you_shur == 'y':
-		correct_answer='n'
-		while correct_answer == 'n':
-			shape = 0
-			while shape != 1 and shape != 2 and shape != 3:
-				print('***************************')
-				print('* hit 1 for a line        *')
-				print('*hit 2 for a trianle      *')
-				print('*hit 3 for a quadrelateral*')
-				print('***************************')
-				shape=int(input('what shape do you want to draw:'))
-				if shape == 1:
-					print('you picked the opption line')
-				elif shape == 2:
-					print('you picked the opption triangle')
-				else :
-						print('you picked the opption quadrelateral') 
-				correct_answer = input('is this the opption that you wanted (answer in n for no or y for yes):')
-				if shape == 1:
-					x_var1 = int(input('what is your first x input: '))
-					if x_var1 == 0:
-						x_var1 = x0
-					elif x_var1 ==  5 :
-						x_var1 = x5
-					elif x_var1 ==  10 :
-						x_var1 = x10
-					elif x_var1 ==  15 :
-						x_var1 = x15
-					elif x_var1 ==  20 :
-						x_var1 = x20
-					elif x_var1 ==  25 :
-						x_var1 = x25
-					elif x_var1 ==  30 :
-						x_var1 = x30
-					elif x_var1 ==  35 :
-						x_var1 = x35
-					elif x_var1 ==  40 :
-						x_var1 = x40
-					elif x_var1 ==  45 :
-						x_var1 = x45
-					elif x_var1 ==  50 :
-						x_var1 = x50
-					elif x_var1 ==  55 :
-						x_var1 = x55
-					elif x_var1 ==  60 :
-						x_var1 = x60
-					elif x_var1 ==  65 :
-						x_var1 = x65
-					elif x_var1 ==  70 :
-						x_var1 = x70
-					elif x_var1 ==  75 :
-						x_var1 = x75
-					elif x_var1 ==  80 :
-						x_var1 = x80
-					elif x_var1 ==  85 :
-						x_var1 = x85
-					elif x_var1 ==  90 :
-						x_var1 = x90
-					elif x_var1 ==  95 :
-						x_var1 = x95
-					elif x_var1 ==  100 :
-						x_var1 = x100
-					# negative x input var
-					elif x_var1 == -5:
-						x_var1 = nx5
-					elif x_var1 == -10:
-						x_var1 = nx10
-					elif x_var1 == -15:
-						x_var1 = nx15
-					elif x_var1 == -20:
-						x_var1 = nx20
-					elif x_var1 == -25:
-						x_var1 = nx25
-					elif x_var1 == -30:
-						x_var1 = nx30
-					elif x_var1 == -35:
-						x_var1 = nx35
-					elif x_var1 == -40:
-						x_var1 = nx40
-					elif x_var1 == -45:
-						x_var1 = nx45
-					elif x_var1 == -50:
-						x_var1 = nx50
-					elif x_var1 == -55:
-						x_var1 = nx55
-					elif x_var1 == -60:
-						x_var1 = nx60
-					elif x_var1 == -65:
-						x_var1 = nx65
-					elif x_var1 == -70:
-						x_var1 = nx70
-					elif x_var1 == -75:
-						x_var1 = nx75
-					elif x_var1 == -80:
-						x_var1 = nx80
-					elif x_var1 == -85:
-						x_var1 = nx85
-					elif x_var1 == -90:
-						x_var1 = nx90
-					elif x_var1 == -95:
-						x_var1 = nx95
-					elif x_var1 == -100:
-						x_var1 = nx100
-					else:
-						print('invalid input')	
+	correct_answer='y'
+	you_shur = 'y'
+	while correct_answer == 'y' and you_shur == 'y':
+		if you_shur == 'y':
+			correct_answer='n'
+			while correct_answer == 'n':
+				shape = 0
+				while shape != 1 and shape != 2 and shape != 3:
+					print('***************************')
+					print('* hit 1 for a line        *')
+					print('*hit 2 for a trianle      *')
+					print('*hit 3 for a quadrelateral*')
+					print('***************************')
+					shape=int(input('what shape do you want to draw:'))
+					if shape == 1:
+						print('you picked the opption line')
+					elif shape == 2:
+						print('you picked the opption triangle')
+					else :
+							print('you picked the opption quadrelateral') 
+					correct_answer = input('is this the opption that you wanted (answer in n for no or y for yes):')
+					if shape == 1:
+						x_var1 = int(input('what is your first x input: '))
+						if x_var1 == 0:
+							x_var1 = x0
+						elif x_var1 ==  5 :
+							x_var1 = x5
+						elif x_var1 ==  10 :
+							x_var1 = x10
+						elif x_var1 ==  15 :
+							x_var1 = x15
+						elif x_var1 ==  20 :
+							x_var1 = x20
+						elif x_var1 ==  25 :
+							x_var1 = x25
+						elif x_var1 ==  30 :
+							x_var1 = x30
+						elif x_var1 ==  35 :
+							x_var1 = x35
+						elif x_var1 ==  40 :
+							x_var1 = x40
+						elif x_var1 ==  45 :
+							x_var1 = x45
+						elif x_var1 ==  50 :
+							x_var1 = x50
+						elif x_var1 ==  55 :
+							x_var1 = x55
+						elif x_var1 ==  60 :
+							x_var1 = x60
+						elif x_var1 ==  65 :
+							x_var1 = x65
+						elif x_var1 ==  70 :
+							x_var1 = x70
+						elif x_var1 ==  75 :
+							x_var1 = x75
+						elif x_var1 ==  80 :
+							x_var1 = x80
+						elif x_var1 ==  85 :
+							x_var1 = x85
+						elif x_var1 ==  90 :
+							x_var1 = x90
+						elif x_var1 ==  95 :
+							x_var1 = x95
+						elif x_var1 ==  100 :
+							x_var1 = x100
+						# negative x input var
+						elif x_var1 == -5:
+							x_var1 = nx5
+						elif x_var1 == -10:
+							x_var1 = nx10
+						elif x_var1 == -15:
+							x_var1 = nx15
+						elif x_var1 == -20:
+							x_var1 = nx20
+						elif x_var1 == -25:
+							x_var1 = nx25
+						elif x_var1 == -30:
+							x_var1 = nx30
+						elif x_var1 == -35:
+							x_var1 = nx35
+						elif x_var1 == -40:
+							x_var1 = nx40
+						elif x_var1 == -45:
+							x_var1 = nx45
+						elif x_var1 == -50:
+							x_var1 = nx50
+						elif x_var1 == -55:
+							x_var1 = nx55
+						elif x_var1 == -60:
+							x_var1 = nx60
+						elif x_var1 == -65:
+							x_var1 = nx65
+						elif x_var1 == -70:
+							x_var1 = nx70
+						elif x_var1 == -75:
+							x_var1 = nx75
+						elif x_var1 == -80:
+							x_var1 = nx80
+						elif x_var1 == -85:
+							x_var1 = nx85
+						elif x_var1 == -90:
+							x_var1 = nx90
+						elif x_var1 == -95:
+							x_var1 = nx95
+						elif x_var1 == -100:
+							x_var1 = nx100
+						else:
+							print('invalid input')		
 
-					#start of y
-					y_var1 = int(input('what is your first y input: '))
-					#positive y input var
-					if y_var1 == 0:
-						y_var1 = y0
-					elif y_var1 == 5:
-						y_var1 = y5
-					elif y_var1 == 10:
-					    y_var1 = y10
-					elif y_var1 == 15:
-					    y_var1 = y15
-					elif y_var1 == 20:
-					    y_var1 = y20
-					elif y_var1 == 25:
-					    y_var1 = y25
-					elif y_var1 == 30:
-					    y_var1 = y30
-					elif y_var1 == 35:
-					    y_var1 = y35
-					elif y_var1 == 40:
-					    y_var1 = y40
-					elif y_var1 == 45:
-					    y_var1 = y45
-					elif y_var1 == 50:
-					    y_var1 = y50
-					elif y_var1 == 55:
-					    y_var1 = y55
-					elif y_var1 == 60:
-					    y_var1 = y60
-					elif y_var1 == 65:
-					    y_var1 = y65
-					elif y_var1 == 70:
-					    y_var1 = y70
-					elif y_var1 == 75:
-					    y_var1 = y75
-					elif y_var1 == 80:
-					    y_var1 = y80
-					elif y_var1 == 85:
-					    y_var1 = y85
-					elif y_var1 == 90:
-					    y_var1 = y90
-					elif y_var1 == 95:
-					    y_var1 = y95
-					elif y_var1 == 100:
-					    y_var1 = y100	
-					#start of y negative
-					elif y_var1 == -5:
-						y_var1 = ny5
-					elif y_var1 == -10:
-						y_var1 = ny10
-					elif y_var1 == -15:
-						y_var1 = ny15
-					elif y_var1 == -20:
-						y_var1 = ny20
-					elif y_var1 == -25:
-						y_var1 = ny25
-					elif y_var1 == -30:
-						y_var1 = ny30
-					elif y_var1 == -35:
-						y_var1 = ny35
-					elif y_var1 == -40:
-						y_var1 = ny40
-					elif y_var1 == -45:
-						y_var1 = ny45
-					elif y_var1 == -50:
-						y_var1 = ny50
-					elif y_var1 == -55:
-						y_var1 = ny55
-					elif y_var1 == -60:
-						y_var1 = ny60
-					elif y_var1 == -65:
-						y_var1 = ny65
-					elif y_var1 == -70:
-						y_var1 = ny70
-					elif y_var1 == -75:
-						y_var1 = ny75
-					elif y_var1 == -80:
-						y_var1 = ny80
-					elif y_var1 == -85:
-						y_var1 = ny85
-					elif y_var1 == -90:
-						y_var1 = ny90
-					elif y_var1 == -95:
-						y_var1 = ny95
-					elif y_var1 == -100:
-						y_var1 = ny100
-					else: 
-						print('invalid input')
-					turtle.goto(x_var1,y_var1)
-					turtle.pendown()
-					turtle.dot()
-	you_shur = input('do you want to draw a shape:')
+						#start of y
+						y_var1 = int(input('what is your first y input: '))
+						#positive y input var
+						if y_var1 == 0:
+							y_var1 = y0
+						elif y_var1 == 5:
+							y_var1 = y5
+						elif y_var1 == 10:
+						    y_var1 = y10
+						elif y_var1 == 15:
+						    y_var1 = y15
+						elif y_var1 == 20:
+						    y_var1 = y20
+						elif y_var1 == 25:
+						    y_var1 = y25
+						elif y_var1 == 30:
+						    y_var1 = y30
+						elif y_var1 == 35:
+						    y_var1 = y35
+						elif y_var1 == 40:
+						    y_var1 = y40
+						elif y_var1 == 45:
+						    y_var1 = y45
+						elif y_var1 == 50:
+						    y_var1 = y50
+						elif y_var1 == 55:
+						    y_var1 = y55
+						elif y_var1 == 60:
+						    y_var1 = y60
+						elif y_var1 == 65:
+						    y_var1 = y65
+						elif y_var1 == 70:
+						    y_var1 = y70
+						elif y_var1 == 75:
+						    y_var1 = y75
+						elif y_var1 == 80:
+						    y_var1 = y80
+						elif y_var1 == 85:
+						    y_var1 = y85
+						elif y_var1 == 90:
+						    y_var1 = y90
+						elif y_var1 == 95:
+						    y_var1 = y95
+						elif y_var1 == 100:
+						    y_var1 = y100	
+						#start of y negative
+						elif y_var1 == -5:
+							y_var1 = ny5
+						elif y_var1 == -10:
+							y_var1 = ny10
+						elif y_var1 == -15:
+							y_var1 = ny15
+						elif y_var1 == -20:
+							y_var1 = ny20
+						elif y_var1 == -25:
+							y_var1 = ny25
+						elif y_var1 == -30:
+							y_var1 = ny30
+						elif y_var1 == -35:
+							y_var1 = ny35
+						elif y_var1 == -40:
+							y_var1 = ny40
+						elif y_var1 == -45:
+							y_var1 = ny45
+						elif y_var1 == -50:
+							y_var1 = ny50
+						elif y_var1 == -55:
+							y_var1 = ny55
+						elif y_var1 == -60:
+							y_var1 = ny60
+						elif y_var1 == -65:
+							y_var1 = ny65
+						elif y_var1 == -70:
+							y_var1 = ny70
+						elif y_var1 == -75:
+							y_var1 = ny75
+						elif y_var1 == -80:
+							y_var1 = ny80
+						elif y_var1 == -85:
+							y_var1 = ny85
+						elif y_var1 == -90:
+							y_var1 = ny90
+						elif y_var1 == -95:
+							y_var1 = ny95
+						elif y_var1 == -100:
+							y_var1 = ny100
+						else: 
+							print('invalid input')
+						turtle.penup()
+						turtle.goto(x_var1,y_var1)
+						turtle.pendown()
+						turtle.dot()	
+
+						x_var2 = int(input('what is your second x input: '))
+						if x_var2 == 0:
+							x_var2 = x0
+						elif x_var2 ==  5 :
+							x_var2 = x5
+						elif x_var2 ==  10 :
+							x_var2 = x10
+						elif x_var2 ==  15 :
+							x_var2 = x15
+						elif x_var2 ==  20 :
+							x_var2 = x20
+						elif x_var2 ==  25 :
+							x_var2 = x25
+						elif x_var2 ==  30 :
+							x_var2 = x30
+						elif x_var2 ==  35 :
+							x_var2 = x35
+						elif x_var2 ==  40 :
+							x_var2 = x40
+						elif x_var2 ==  45 :
+							x_var2 = x45
+						elif x_var2 ==  50 :
+							x_var2 = x50
+						elif x_var2 ==  55 :
+							x_var2 = x55
+						elif x_var2 ==  60 :
+							x_var2 = x60
+						elif x_var2 ==  65 :
+							x_var2 = x65
+						elif x_var2 ==  70 :
+							x_var2 = x70
+						elif x_var2 ==  75 :
+							x_var2 = x75
+						elif x_var2 ==  80 :
+							x_var2 = x80
+						elif x_var2 ==  85 :
+							x_var2 = x85
+						elif x_var2 ==  90 :
+							x_var2 = x90
+						elif x_var2 ==  95 :
+							x_var2 = x95
+						elif x_var2 ==  100 :
+							x_var2 = x100
+						# negative x input var
+						elif x_var2 == -5:
+							x_var2 = nx5
+						elif x_var2 == -10:
+							x_var2 = nx10
+						elif x_var2 == -15:
+							x_var2 = nx15
+						elif x_var2 == -20:
+							x_var2 = nx20
+						elif x_var2 == -25:
+							x_var2 = nx25
+						elif x_var2 == -30:
+							x_var2 = nx30
+						elif x_var2 == -35:
+							x_var2 = nx35
+						elif x_var2 == -40:
+							x_var2 = nx40
+						elif x_var2 == -45:
+							x_var2 = nx45
+						elif x_var2 == -50:
+							x_var2 = nx50
+						elif x_var2 == -55:
+							x_var2 = nx55
+						elif x_var2 == -60:
+							x_var2 = nx60
+						elif x_var2 == -65:
+							x_var2 = nx65
+						elif x_var2 == -70:
+							x_var2 = nx70
+						elif x_var2 == -75:
+							x_var2 = nx75
+						elif x_var2 == -80:
+							x_var2 = nx80
+						elif x_var2 == -85:
+							x_var2 = nx85
+						elif x_var2 == -90:
+							x_var2 = nx90
+						elif x_var2 == -95:
+							x_var2 = nx95
+						elif x_var2 == -100:
+							x_var2 = nx100
+						else:
+							print('invalid input')		
+
+						#start of y
+						y_var2 = int(input('what is your second y input: '))
+						#positive y input var
+						if y_var2 == 0:
+							y_var2 = y0
+						elif y_var2 == 5:
+							y_var2 = y5
+						elif y_var2 == 10:
+						    y_var2 = y10
+						elif y_var2 == 15:
+						    y_var2 = y15
+						elif y_var2 == 20:
+						    y_var2 = y20
+						elif y_var2 == 25:
+						    y_var2 = y25
+						elif y_var2 == 30:
+						    y_var2 = y30
+						elif y_var2 == 35:
+						    y_var2 = y35
+						elif y_var2 == 40:
+						    y_var2 = y40
+						elif y_var2 == 45:
+						    y_var2 = y45
+						elif y_var2 == 50:
+						    y_var2 = y50
+						elif y_var2 == 55:
+						    y_var2 = y55
+						elif y_var2 == 60:
+						    y_var2 = y60
+						elif y_var2 == 65:
+						    y_var2 = y65
+						elif y_var2 == 70:
+						    y_var2 = y70
+						elif y_var2 == 75:
+						    y_var2 = y75
+						elif y_var2 == 80:
+						    y_var2 = y80
+						elif y_var2 == 85:
+						    y_var2 = y85
+						elif y_var2 == 90:
+						    y_var2 = y90
+						elif y_var2 == 95:
+						    y_var2 = y95
+						elif y_var2 == 100:
+						    y_var2 = y100	
+						#start of y negative
+						elif y_var2 == -5:
+							y_var2 = ny5
+						elif y_var2 == -10:
+							y_var2 = ny10
+						elif y_var2 == -15:
+							y_var2 = ny15
+						elif y_var2 == -20:
+							y_var2 = ny20
+						elif y_var2 == -25:
+							y_var2 = ny25
+						elif y_var2 == -30:
+							y_var2 = ny30
+						elif y_var2 == -35:
+							y_var2 = ny35
+						elif y_var2 == -40:
+							y_var2 = ny40
+						elif y_var2 == -45:
+							y_var2 = ny45
+						elif y_var2 == -50:
+							y_var2 = ny50
+						elif y_var2 == -55:
+							y_var2 = ny55
+						elif y_var2 == -60:
+							y_var2 = ny60
+						elif y_var2 == -65:
+							y_var2 = ny65
+						elif y_var2 == -70:
+							y_var2 = ny70
+						elif y_var2 == -75:
+							y_var2 = ny75
+						elif y_var2 == -80:
+							y_var2 = ny80
+						elif y_var2 == -85:
+							y_var2 = ny85
+						elif y_var2 == -90:
+							y_var2 = ny90
+						elif y_var2 == -95:
+							y_var2 = ny95
+						elif y_var2 == -100:
+							y_var2 = ny100
+						else: 
+							print('invalid input')
+						turtle.goto(x_var2,y_var2)
+						turtle.penup()
+						turtle.dot()
+		you_shur = input('do you want to draw another shape (answer in y or n):')
+	clear_screen=input('do you want to clear screen (answer in y or n):')
+	if clear_screen == 'y':
+		turtle.clear()
 print('you quit the program') 
