@@ -1,7 +1,8 @@
 import random
 i='y'
 while i=='y' or i=='yes' or i=='Yes' :
-	randome_number=random.randrange(0, 4)
+	randome_number=random.randrange(0,3)
+	randome_number=randome_number+1
 	print('you are playing rock paper scissors')
 	print('your opptions are:')
 	print('*******************')
