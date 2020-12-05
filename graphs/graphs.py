@@ -1375,4 +1375,3 @@ while clear_screen == 'y':
 	if clear_screen == 'y':
 		turtle.clear()
 print('you quit the program') 
-print('hi')
