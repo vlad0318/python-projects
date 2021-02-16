@@ -1,17 +1,31 @@
-from variebles import *
-def encryption():
-	print('hi')
+import base64
 
-times = 1 
-file = open("variebles.py","r") 
-Counter = 0
-Content = file.read() 
-CoList = Content.split("\n") 
-for i in CoList: 
-    if i: 
-        Counter += 1
+def encode():
+    message = input('input the message that you want to encode: ')
+    message_bytes = message.encode('ascii')
+    base64_bytes = base64.b64encode(message_bytes)
+    base64_message = base64_bytes.decode('ascii')
+    print(base64_message)
 
-while times <= Counter:
-	varh =str('var')
-	print(varh)
-	times = times+1
+def decode():
+    message = input('input the message that you want to decode: ')
+    message_bytes = message.encode('ascii')
+    base64_bytes = base64.b64decode(message_bytes)
+    base64_message = base64_bytes.decode('ascii')
+    print(base64_message)
+
+answere = 'y'
+while answere == 'y' or answere == 'Y':
+    print('***************************')
+    print('*hit 1 to encode a message*')
+    print('*hit 2 to decode a massage*')
+    print('***************************')
+    choice = int(input('chose an option: '))
+    if choice == 1:
+        encode()
+    elif choice == 2:
+        decode()
+    else:
+        print('invalid input')
+
+    answere = input('do you want to use this program again: ')
