@@ -5,15 +5,12 @@ def editfile():
     filename = input('what file do you want to edit: ')
     print('what do you want to edit with')
     print('here are your options')
-    print('************************')
-    print('*hit 1 for vim         *')
-    print('*hit 2 for sublime text*')
-    print('************************')
+    print('***************')
+    print('*hit 1 for vim*')
+    print('***************')
     texteditor = int(input('what is your choise:'))
     if texteditor == 1:
         os.system('vim '+filename)
-    elif texteditor == 2:
-        os.system('subl '+filename)
     else:
         print('invalid input')
 
